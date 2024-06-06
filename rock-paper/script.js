@@ -5,9 +5,9 @@ let userScore = 0;
 let computerScore = 0;
 
 const choices = ['rock', 'paper', 'scissors'];
-const choicesDivs = document.querySelectorAll('.choice');
+const choicesButtons = document.querySelectorAll('.choice');
 
-choicesDivs.forEach(choice => {
+choicesButtons.forEach(choice => {
     choice.addEventListener('click', () => {
         const userChoice = choice.id;
         const computerChoice = getComputerChoice();
